@@ -71,7 +71,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 function reversedLooper(letters){
-  for (let i = letters.length -1; 1 >= 0; i--){
+  for (let i = letters.length -1; i >= 0; i--){
     alert(letters[i])
   }
 }
@@ -89,13 +89,18 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
+
 function evenFinder(nums){
-  for (i = 0; i < nums.length; i++){
-    if (nums % 2 === 0){
-      evenNums.push(nums[i]));
+  let evenNums = [];
+  for(i = 0; i < nums.length; i++){
+    if(nums[i]%2 === 0){
+      evenNums.push(nums[i]);
+      }
     }
+    return evenNums
   }
-}
+
+
 
 
 
